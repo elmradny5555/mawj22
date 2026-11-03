@@ -1,0 +1,157 @@
+<html>
+<body>
+   
+body {
+
+        background-color: #f4f7f6;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    /* شريط الملاحة (Header) */
+    header {
+        background-color: #1a1a2e;
+        color: #fff;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        color: #00adb5;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+        color: #00adb5;
+    }
+
+    /* القسم الرئيسي (Hero Section) */
+    .hero {
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1200x500') no-repeat center center/cover;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        display: inline-block;
+        background: #00adb5;
+        color: #fff;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s;
+    }
+
+    .btn:hover {
+        background: #007b80;
+    }
+
+    /* قسم الخدمات/المميزات */
+    .features {
+        padding: 50px 20px;
+        max-width: 1100px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: #fff;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .card h3 {
+        margin-bottom: 15px;
+        color: #1a1a2e;
+    }
+
+    /* التذييل (Footer) */
+    footer {
+        background: #1a1a2e;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+    }
+</style>
+<!-- شريط القائمة العليا -->
+<header>
+    <h1>موقعي</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#services">الخدمات</a></li>
+            <li><a href="#about">عن الموقع</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- البانر الرئيسي -->
+<section class="hero" id="home">
+    <h2>أهلاً بك في موقعي الجديد!</h2>
+    <p>هنا يمكنك إضافة وصف بسيط لمشروعك أو فكرتك.</p>
+    <a href="#services" class="btn">استكشف المزيد</a>
+</section>
+
+<!-- قسم الخدمات أو الكروت -->
+<section class="features" id="services">
+    <div class="card">
+        <h3>التصميم</h3>
+        <p>تصاميم عصرية ومتجاوبة تعمل على كافة الأجهزة الذكية والهواتف.</p>
+    </div>
+    <div class="card">
+        <h3>التطوير</h3>
+        <p>كتابة أكواد نظيفة وسريعة وسهلة التعديل والتطوير في المستقبل.</p>
+    </div>
+    <div class="card">
+        <h3>الدعم</h3>
+        <p>تقديم الدعم الفني والمساعدة المستمرة لتطوير الأفكار والحلول.</p>
+    </div>
+</section>
+
+<!-- تذييل الصفحة -->
+<footer>
+    <p>جميع الحقوق محفوظة &copy; 2026 - موقعي الشخصي</p>
+</footer>
+</body>
+</html>
